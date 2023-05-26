@@ -47,7 +47,27 @@ public class CalculatorTest {
 		
 		int expected = 5555;
 		assertEquals(actual, expected); 
-		ft
+		
 	}
+	public final void testDivide() {
+		int a = 1000;
+		int b = 500;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.divide(a, b);
+		
+		int expected = 2;
+		assertEquals(actual, expected);
+	}
+	public final void testMultiply() {
+		int a = 50;
+		int b = 10;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiply(a, b);
+		
+		int expected = 500;
+		assertEquals(actual, expected);
 
+}
 }
